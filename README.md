@@ -44,7 +44,7 @@ mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(你的經緯度,放大程度�
 極為主流的介面，可以左右滑動螢幕切換到不同的Fragment中，也可以點選上面的TabLayout直接切換，Tab上可以設定圖示，透過與ViewPager的綁定還可以設定標題，要注意compile的版本。<br/>
 ## WebView
 我註解起來的是一般的WebView，WebView使用的是系統內自帶的瀏覽器，使用shouldOverrideUrlLoading可以讓網頁連結會在本程式內繼續使用，而不是跳脫至其他網頁瀏覽器，而下面的程式則是透過輸入指定的Url去獲得網站所有的原始碼。<br/>
-##把你的程式碼一起分享到github上吧
+## 把你的程式碼一起分享到github上吧
 初始化，加入git的隱藏資料夾<br/>
 git init<br/>
 有時候會出現Warning LF will be replaced by CRLF，所以要取消git的自動換行才能繼續上加入檔案<br/>
