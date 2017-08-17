@@ -11,7 +11,7 @@ Content Provider是安卓可以跨程式存取的一個元件，主活動透過u
 取得聯絡人的資料，需要先取得READ_CONTACTS的權限，並使用Cursor去取得Content Provider提供的聯絡人資料，因為資料種類不是單一的，還要用getColumnIndex去細分種類。<br/>
 ## Get location name via Json
 一開始尋找location的provider有哪些可用，而GPS的定位是最準的要優先使用，其次是網路，如果都沒有就會跳出一個AlertDialog，接著也要確定都有取得權限以防閃退，接著建立一個監聽器，當位置在移動或是隨時間過去的時候會刷新現在的位置，在程式關閉後也要注意監聽器需要關閉。<br/>
-只要在瀏覽器輸入Google Maps的API網址(http://maps.google.com/maps/api/geocode/json?latlng=經度,緯度&language=zh-TW&sensor=true)便會跳出一長串以繁體中文顯示的Json格式資料，開啟一個新執行緒呼叫網址並使用Java內建的BufferedReader來把內容一個個取出放到用來暫存的String，因為有空格的關係所以要個別把這些字串再append到StringBuilder中，接著開啟JsonObject選擇物件來源，轉至JsonArray中來進行讀取資料，最後用Message的方式送到Handler中更改UI上的文字。<br/>
+只要在瀏覽器輸入Google Maps的API網址 (http://maps.google.com/maps/api/geocode/json?latlng=經度,緯度&language=zh-TW&sensor=true) 便會跳出一長串以繁體中文顯示的Json格式資料，開啟一個新執行緒呼叫網址並使用Java內建的BufferedReader來把內容一個個取出放到用來暫存的String，因為有空格的關係所以要個別把這些字串再append到StringBuilder中，接著開啟JsonObject選擇物件來源，轉至JsonArray中來進行讀取資料，最後用Message的方式送到Handler中更改UI上的文字。<br/>
 ## Google Map
 要先到Google API的網站上申請開發者序號，更改Manifest中的序號檔，畢竟安卓開發這東西改來改去的，還是開模板再看看就好，加入相機位置的更動
 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(你的經緯度,放大程度，一般為15));<br/>
