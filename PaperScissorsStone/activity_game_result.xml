@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="全部局數"/>
+    <EditText
+        android:enabled="false"
+        android:text="0"
+        android:id="@+id/edtCountSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="玩家贏"/>
+    <EditText
+        android:enabled="false"
+        android:text="0"
+        android:id="@+id/edtCountPlayerWin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="電腦贏"/>
+    <EditText
+        android:enabled="false"
+        android:text="0"
+        android:id="@+id/edtComputerWin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="平手"/>
+    <EditText
+        android:enabled="false"
+        android:text="0"
+        android:id="@+id/edtCountDraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnBackToGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="回到遊戲"/>
+</LinearLayout>

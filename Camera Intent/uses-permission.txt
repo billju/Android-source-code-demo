@@ -1,0 +1,2 @@
+<uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+<uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
