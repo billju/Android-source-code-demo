@@ -1,4 +1,5 @@
 ## Android 原始碼範例
+使用sdk版本是android 7.1.1，能在4.1到8.0的版本上成功執行
 ## Animator
 使用ObjectAnimator與ValueAnimator來控制一行文字的動畫格式<br/>
 ## Broadcast & SharePreference
