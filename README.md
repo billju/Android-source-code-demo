@@ -1,5 +1,6 @@
 ## Android 原始碼範例
-使用sdk版本是android 7.1.1，能在4.1到8.0的版本上成功執行
+使用sdk版本是android 7.1.1，能在4.1到8.0的版本上成功執行<br/>
+為了減少翻資料夾的麻煩，只留了主程式檔和compile須知，有些比較複雜的介面布局檔也會留下來
 ## Animator
 使用ObjectAnimator與ValueAnimator來控制一行文字的動畫格式<br/>
 ## Broadcast & SharePreference
