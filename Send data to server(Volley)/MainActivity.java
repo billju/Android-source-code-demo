@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Button SendButton;
     private EditText EmailInput, PasswordInput;
     private AlertDialog.Builder builder;
+    //URL為ip位址加上伺服器中login.php所在的位址
     String server_url = "http://192.168.1.102/mystore/login.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
